@@ -268,4 +268,65 @@ main #profile .pro_bt .study .s_1 dd p{
     padding-left:60px;
 }
 main #profile .pro_bt .study .s_1 dd p:nth-child(3) {margin:20px 0;}
-
+/*-----------------------------------------젠틀 몬스터 프로젝트-------------------*/
+main #project_web1 {
+    padding-top: 170px;
+}
+main #project_web1 h1 {
+    background:pink;
+    padding-bottom:27px;
+    text-align: center;
+    font-size:3.222rem;
+    letter-spacing: -2.9px;
+    font-weight: 700;
+}
+main #project_web1 .project {
+    background:lightcyan;
+    width:1238px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+}
+main #project_web1 .project .pjt_left {
+    background: lightgreen;
+    text-align:center;
+    
+}
+main #project_web1 .project .pjt_left h2 {
+    padding-bottom:18px;
+    font-size:2.222rem;
+    font-weight:600;
+    letter-spacing: -2.9px;
+}
+main #project_web1 .project .pjt_left .pjt_img {}
+main #project_web1 .project .pjt_right {
+    background:lightcoral;
+}
+main #project_web1 .project .pjt_right .pjt_info {
+    background:lightsalmon;
+}
+main #project_web1 .project .pjt_right .pjt_info h3 {
+    font-size:1.944rem;
+    letter-spacing: -2.9px;
+    font-weight: 500;
+}
+main #project_web1 .project .pjt_right .pjt_info span {
+    font-size:1.389rem;
+    letter-spacing: -2.9px;
+}
+main #project_web1 .project .pjt_right .pjt_info dl {}
+main #project_web1 .project .pjt_right .pjt_info dl dt {
+    font-size:1.667rem;
+    letter-spacing: -2.9px;
+}
+main #project_web1 .project .pjt_right .pjt_info dl dd {
+    font-size:1.389rem;
+    letter-spacing: -2.9px;
+}
+main #project_web1 .project .pjt_right .pjt_link {}
+main #project_web1 .project .pjt_right .pjt_link a {
+    font-size:1.667rem;
+    letter-spacing: -2.9px;
+    border:1px solid #000;
+    border-radius:20px;
+    padding:10px;
+}
