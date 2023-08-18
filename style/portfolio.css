@@ -1,0 +1,266 @@
+/*반응형 대비 최소 제한 너비 설정*/
+header, main {min-width:900px;}
+/*header*/
+header {
+    /* background:indianred; */
+    position: fixed;left:0; top:0;
+    width:100%;
+    z-index:999; 
+    padding:40px 30px 0 30px;
+}
+header nav {
+    border-top:1px dashed #0769A0;
+    border-bottom:4px solid #0769A0;
+    padding:17px 0;
+    margin-bottom:10px;
+}
+header nav .gnb {}
+header nav .gnb a {
+    margin-right:25px;
+    font-size:1.667rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
+header .sns {
+    /* background:yellow; */
+    text-align:right;
+    display:flex;
+    flex-flow:column nowrap;
+} 
+header .sns span { 
+    padding-bottom:10px;
+    font-size:1.667rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
+header .sns span:last-child{padding-bottom:0;}
+main>* {padding:0 30px;}
+main {
+    background: linear-gradient(180deg, rgba(210,247,243,1) 0%, rgba(240,255,253,1) 100%);
+    padding-top:336px;
+}
+main #home {
+    height:100vh;
+    text-align: center;
+    position: relative;
+}
+main #home h1 {}
+main #home h1 img {}
+main #home .mouse {
+    position:absolute; left:50%; bottom:50px;
+    transform:translateX(-50%);
+}
+main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
+@keyframes mouse_move{
+    0% {transform:translateY(0)}
+    100% {transform: translateY(-50px)}
+}
+/*--------------skill---------------------*/
+main #skill {
+    padding-top:200px;
+}
+main #skill h1 {
+    text-align: center;
+    margin:0 auto;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:15px;
+    padding-right:50px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+main #skill .container {
+    /* background:lightgreen; */
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+main #skill .container:nth-child(2) {padding-top:0;}
+main #skill .container p {
+}
+main #skill .container .con_left {
+    /* background:lightcoral; */
+    margin:60px 56px 0 0;
+    text-align:right;
+}
+main #skill .container .con_left li {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin-bottom:110px;
+}
+main #skill .container .con_left li:last-child {margin-bottom:0;}
+main #skill .container .con_left li .c_left {
+    padding-right:20px;
+}
+main #skill .container .con_left li .icon {}
+/*-----------------------right--------------*/
+main #skill .container .con_right {
+    /* background: lightpink; */
+    display:flex;
+    flex-flow:column nowrap;
+    text-align:left;
+    margin:60px 0 0 56px;
+    padding-top:90px;
+}
+main #skill .container .con_right li {
+    margin-bottom:110px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+main #skill .container .con_right li:last-child {margin-bottom:0;}
+main #skill .container .con_right li .c_right {}
+main #skill .container .con_right li .icon {padding-right:20px;}
+/*---------------공통----------------------------*/
+main #skill .container .con li .contents {
+    font-size:1.111rem;
+    font-weight:500;
+    line-height:35px;
+}
+/*----------------------프로필--------------------------*/
+main #profile {
+    
+    padding-top:200px;
+}
+main #profile .pro_top {
+    margin-bottom:170px;
+    /* background:lightpink; */
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+main #profile .pro_top h1 {
+    width:463px;
+}
+main #profile .pro_top h1 img {}
+main #profile .pro_top .container {
+    /* background:lightgray; */
+    margin:0 48px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main #profile .pro_top .container .photo {
+    margin-bottom:69px;
+}
+main #profile .pro_top .container .photo img {}
+main #profile .pro_top .container .con_txt {text-align: center;}
+main #profile .pro_top .container .con_txt p {
+    margin-bottom: 30px;
+    font-size:1.778rem;
+    font-weight:600;
+}
+main #profile .pro_top .container .con_txt span {
+    font-size:1.556rem;
+    font-weight:500;
+}
+/*---------------------------------------sns -------------------------*/
+main #profile .pro_top .con_sns {
+    /* background:lightcoral; */
+    width:463px;
+}
+main #profile .pro_top .con_sns li {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+main #profile .pro_top .con_sns li:nth-child(2) {padding:30px 0;}
+main #profile .pro_top .con_sns li p {
+    margin-right:15px;
+}
+main #profile .pro_top .con_sns li p img {}
+main #profile .pro_top .con_sns li span {
+    font-size:1.111rem;
+}
+/*----------------------------------성격--------------------------*/
+main #profile .pro_middle {
+    /* background:skyblue; */
+    width:1268px; margin:0 auto;
+    padding-bottom:170px;
+}
+main #profile .pro_middle .personality {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main #profile .pro_middle .personality li {
+    /* background:palegreen; */
+    width:270px;height:270px;
+    border-radius:200px 0 200px 200px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    padding:20px 20px;
+    text-align: center;
+}
+main #profile .pro_middle .personality li:nth-child(1) {background:#FFFCE3;}
+main #profile .pro_middle .personality li:nth-child(2) {background:#DBFDD0;}
+main #profile .pro_middle .personality li:nth-child(3) {background:#FFECEC;}
+main #profile .pro_middle .personality li p {}
+main #profile .pro_middle .personality li p img {}
+main #profile .pro_middle .personality li span {
+    font-size:1.556rem;
+    font-weight:600;
+    margin:15px;
+}
+main #profile .pro_middle .personality li .txt {
+    font-size:1.111rem;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+}
+/*----------------------------------------하단-------------------------*/
+main #profile .pro_bt {
+    background:rgba(217, 217, 217, 0.4);
+    margin:0 auto;
+    width:1240px; height:576px;
+    border-radius:0 50px 50px 50px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+main #profile .pro_bt .study {
+    width:1172px;
+}
+main #profile .pro_bt .study .s_all {
+    padding-top:20px;
+}
+main #profile .pro_bt .study .s_all:nth-child(2) {padding-top:10px;}
+main #profile .pro_bt .study .s_all h3 {
+    font-size:1.667rem;
+    font-weight: 600;
+    padding:10px;
+    border-left:3px solid #0769A0;
+    margin:10px;
+}
+main #profile .pro_bt .study .s_all dl {
+    /* background:lightgreen; */
+    display:flex;
+    flex-flow:row wrap;
+    margin-left:231px;
+}
+main #profile .pro_bt .study .s_all dt {
+    /* background:lightpink; */
+    font-size:1.389rem;
+    letter-spacing: -0.5px;
+    width:420px;
+    padding-bottom:40px;
+}
+main #profile .pro_bt .study .s_all dd {
+    /* background:lightsalmon; */
+    font-size:1.389rem;
+    font-weight:600;
+    letter-spacing: -0.5px;
+    width:calc(100% - 420px);
+}
+main #profile .pro_bt .study .s_1 dd h4 {
+    font-size:1.389rem;
+    letter-spacing: -0.5px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+main #profile .pro_bt .study .s_1 dd p{
+    font-size:1.111rem;
+    letter-spacing: -0.5px;
+    padding-left:60px;
+}
+main #profile .pro_bt .study .s_1 dd p:nth-child(3) {margin:20px 0;}
+
