@@ -1,3 +1,5 @@
+body, html {scroll-behavior:smooth;}
+
 /*반응형 대비 최소 제한 너비 설정*/
 header, main {min-width:900px;}
 /*header*/
@@ -32,13 +34,14 @@ header .sns span {
     font-family: 'Nanum Pen Script', cursive;
 }
 header .sns span:last-child{padding-bottom:0;}
+/*-----------------------메인------------------------------------*/
 main>* {padding:0 30px;}
 main {
     background: linear-gradient(180deg, rgba(210,247,243,1) 0%, rgba(240,255,253,1) 100%);
     padding-top:336px;
 }
 main #home {
-    height:100vh;
+    height:80vh;
     text-align: center;
     position: relative;
 }
@@ -55,7 +58,7 @@ main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
 }
 /*--------------skill---------------------*/
 main #skill {
-    padding-top:200px;
+    padding-top:170px;
 }
 main #skill h1 {
     text-align: center;
@@ -171,6 +174,8 @@ main #profile .pro_top .con_sns li p img {}
 main #profile .pro_top .con_sns li span {
     font-size:1.111rem;
 }
+/*---------------------------------------------sns 애니메이션-------------------------*/
+
 /*----------------------------------성격--------------------------*/
 main #profile .pro_middle {
     /* background:skyblue; */
